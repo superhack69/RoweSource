@@ -466,7 +466,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_PHYSICAL,
     },
 
-    [MOVE_BEAT_DOWN] =
+    [MOVE_FURY_ATTACK] =
     {
         .effect = EFFECT_MULTI_HIT,EFFECT_SPEED_DOWN_HIT,
         .power = 30,
@@ -980,7 +980,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_SPECIAL,
     },
 
-    [MOVE_MOUTH_BEAM] =
+    [MOVE_HYPER_BEAM] =
     {
         .effect = EFFECT_RECHARGE,EFFECT_SPECIAL_ATTACK_UP_3
         .power = 200,
