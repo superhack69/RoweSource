@@ -24,7 +24,7 @@ const u16 gEggMoves[] = {
 		MOVE_THRASH,
 		MOVE_BEAT_DOWN,
 		MOVE_BODY_SLAM,
-		MOVE_MOUTH_BEAM,)
+		MOVE_MOUTH_BEAM),
 
 
 	egg_moves(CHARMANDER,
