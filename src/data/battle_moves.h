@@ -466,12 +466,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_PHYSICAL,
     },
 
-    [MOVE_FURY_ATTACK] =
+    [MOVE_BEAT_DOWN] =
     {
-        .effect = EFFECT_MULTI_HIT,
-        .power = 15,
-        .type = TYPE_NORMAL,
-        .accuracy = 85,
+        .effect = EFFECT_MULTI_HIT,EFFECT_SPEED_DOWN_HIT,
+        .power = 30,
+        .type = TYPE_FIGHTING,
+        .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -519,11 +519,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_BODY_SLAM] =
     {
         .effect = EFFECT_PARALYZE_HIT,
-        .power = 85,
+        .power = 120,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 15,
-        .secondaryEffectChance = 30,
+        .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST | FLAG_DMG_MINIMIZE,
@@ -571,8 +571,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
             .power = 90,
             .pp = 20,
         #endif
-        .effect = EFFECT_RAMPAGE,
-        .type = TYPE_NORMAL,
+        .effect = EFFECT_ATTACK_UP_2,EFFECT_RAMPAGE
+        .type = TYPE_FIRE,
         .accuracy = 100,
         .secondaryEffectChance = 100,
         .target = MOVE_TARGET_RANDOM,
@@ -980,14 +980,14 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_SPECIAL,
     },
 
-    [MOVE_HYPER_BEAM] =
+    [MOVE_MOUTH_BEAM] =
     {
-        .effect = EFFECT_RECHARGE,
-        .power = 150,
-        .type = TYPE_NORMAL,
+        .effect = EFFECT_RECHARGE,EFFECT_SPECIAL_ATTACK_UP_3
+        .power = 200,
+        .type = TYPE_GRASS,
         .accuracy = 90,
         .pp = 5,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGSROCK_AFFECTED,
